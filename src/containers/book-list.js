@@ -4,7 +4,7 @@ import { selectBook } from '../actions/index';
 import { bindActionCreators } from 'redux';
 
 class BookList extends Component {
-  renderList() {
+  renderList () {
     return this.props.books.map((book) => {
       return (
         <li
@@ -16,7 +16,7 @@ class BookList extends Component {
       );
     });
   }
-  render() {
+  render () {
     return (
       <ul className="list-group col-sm-4">
         {this.renderList()}
